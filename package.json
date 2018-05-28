@@ -4,8 +4,13 @@
   "private": true,
   "dependencies": {
     "@material/button": "^0.35.0",
+    "@material/textfield": "^0.35.2",
+    "@material/top-app-bar": "^0.35.2",
     "konva": "^2.0.2",
-    "ramda": "^0.25.0"
+    "node-sass": "^4.9.0",
+    "pica": "^4.1.1",
+    "ramda": "^0.25.0",
+    "sass-loader": "^7.0.1"
   },
   "scripts": {
     "dev": "webpack --mode development",

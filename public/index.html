@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="theme-color" content="#000000">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <!--
       manifest.json provides metadata used when your web app is added to the
       homescreen on Android. See https://developers.google.com/web/fundamentals/engage-and-retain/web-app-manifest/
@@ -20,7 +21,7 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-  <title>React App</title>
+  <title>sensefi pathfinder</title>
 </head>
 
 <body>
@@ -28,19 +29,28 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <div id="root">
-    <div class="file-input-wrapper">
-      <input type="file" id="file_input_text" />
-    </div>
+    <header class="mdc-top-app-bar">
+      <div class="mdc-top-app-bar__row">
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+          <a href="#" class="material-icons mdc-top-app-bar__navigation-icon">menu</a>
+          <span class="mdc-top-app-bar__title">Title</span>
+        </section>
+        <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+          <div class="upload-btn-wrapper">
+            <button class="btn mdc-button mdc-button--outlined mdc-theme--secondary">CHARGER PLAN</button>
+            <input type="file" name="myfile" id="file_input_file" />
+          </div>
+          <button id="send-data" class="mdc-button mdc-button--outlined mdc-theme--secondary">
+            SEND
+          </button>
+        </section>
+      </div>
+    </header>
     <div id="image_result_wrapper">
       <img src="" alt="" id="image_result">
       <div id="container"></div>
-
     </div>
-
-    <button id="send-data" class="mdc-button">
-      SEND
   </div>
-
   <style>
     #image_result_wrapper {
       display: flex;
@@ -50,6 +60,7 @@
       position: absolute;
     }
   </style>
+
 
 </body>
 
