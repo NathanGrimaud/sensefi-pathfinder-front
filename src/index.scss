@@ -1,0 +1,47 @@
+@import '@material/button/mdc-button';
+@import '@material/textfield/mdc-text-field';
+@import '@material/top-app-bar/mdc-top-app-bar';
+
+html,
+body,
+#root {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+}
+* {
+  --mdc-theme-primary: #212121;
+  --mdc-theme-secondary: #bdbdbd;
+}
+#image_result_wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.mdc-button {
+  color: #bdbdbd !important;
+  border-color: #bdbdbd !important;
+  cursor: pointer;
+}
+
+.upload-btn-wrapper {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: inline-block;
+  padding: 10px;
+}
+
+.btn {
+}
+
+.upload-btn-wrapper input[type='file'] {
+  font-size: 100px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  opacity: 0;
+}
