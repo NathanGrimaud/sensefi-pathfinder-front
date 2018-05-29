@@ -82,9 +82,9 @@ function makegrid() {
   };
   const selection = new Konva.Rect(selectionOptions);
   const colors = {
-    block: 'rgba(255, 0, 0, 0.6)',
-    start: 'rgba(0, 255, 0, 0.6)',
-    path: 'rgba(0, 0, 255, 0.6)',
+    block: 'rgba(183, 28, 28, 0.6)',
+    start: 'rgba(0, 200, 83, 0.6)',
+    path: 'rgba(0, 200, 83, 0.6)',
     empty: 'rgba(0, 0, 0, 0)'
   };
 
